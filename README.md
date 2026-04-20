@@ -14,12 +14,6 @@ A command-line interface for managing your [MeisterTask](https://www.meistertask
 
 ### Using uv (Recommended)
 
-If you have [uv](https://github.com/astral-sh/uv) installed:
-
-```bash
-uv tool install meistertask-cli
-```
-
 Or from source:
 
 ```bash
@@ -65,7 +59,7 @@ mtask projects get <project_id>
 mtask sections list
 
 # List sections for a specific project
-mtask sections list --project <project_id>
+mtask sections list --project <project_id/project_name>
 
 # Get details for a specific section
 mtask sections get <section_id>
@@ -80,11 +74,17 @@ mtask tasks list
 # List tasks assigned to you
 mtask tasks list --mine
 
+# List tasks for a specific project
+mtask tasks list --project <project_id/project_name>
+
+# List tasks for a specific section
+mtask tasks list --section <section_id/section_name>
+
 # Create a new task
-mtask tasks create --name "My New Task" --section <section_id>
+mtask tasks create --name "My New Task" --section <section_id/section_name> --project <project_id/project_name>
 
 # Move a task to a different section
-mtask tasks edit <task_id> --section <new_section_id>
+mtask tasks edit <task_id> --section <new_section_id/new_section_name>
 
 # Get details for a specific task
 mtask tasks get <task_id>
@@ -97,12 +97,8 @@ mtask tasks get <task_id>
 mtask persons me
 
 # List persons in a project
-mtask persons list --project <project_id>
+mtask persons list --project <project_id/project_name>
 
 # Get details for a specific person
 mtask persons get <person_id>
 ```
-
-## License
-
-MIT
