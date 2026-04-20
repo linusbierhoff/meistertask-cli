@@ -1,6 +1,6 @@
 # MeisterTask CLI
 
-A command-line interface for managing your [MeisterTask](https://www.meistertask.com/) projects, sections, tasks, and persons. Built with Python, Click, and Rich.
+A UNOFFICIAL command-line interface for managing your [MeisterTask](https://www.meistertask.com/) projects, sections, tasks, and persons. Built with Python, Click, and Rich.
 
 ## Features
 
@@ -14,17 +14,16 @@ A command-line interface for managing your [MeisterTask](https://www.meistertask
 
 ### Using uv (Recommended)
 
-Or from source:
-
 ```bash
-uv sync
+ uv tool install .
 ```
 
-### Using pip
+### Using pipx
 
 ```bash
-pip install .
-```
+ pipx install .
+ ```
+
 
 ## Getting Started
 
